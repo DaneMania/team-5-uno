@@ -1,4 +1,4 @@
-# Erin's a Java dev stubmling through.Net...but she's sure gonna try!
+# FredJer a Java dev stubmling through.Net...but she's sure gonna try!
 This is a very simple starter project to demonstrate SpecFlow and living-doc, as well as simple commands for C# outside of Visual Studio.
 * "make bootstrap" will install the plugin necessary for SpecFlow results (only required if you are building locally)
 * "make build" will clean and build this thing
@@ -15,4 +15,5 @@ M1 MAC USERS: I had to force living doc to install with the correct architecture
 The CLI has been coded for you using a library called [Sharprompt][https://github.com/shibayan/Sharprompt], but it is bare-bones and filled with TODOs. You can find and edit the code in LevelUpGame/levelup/cli/Game.cs.  All the system operations are coded in LevelUpGame/levelup/GameController.cs. Other than CreateCharacter, which is implemented as an example of Cucumber testing, all the system operations are empty "do nothing" implementations.
 
 
-Echo "Marcus was here"
+
+FredrickJerry was here
