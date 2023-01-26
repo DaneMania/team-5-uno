@@ -20,9 +20,8 @@ namespace LevelUpGame.Test.Features
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.9.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("Move in a direction")]
-    public partial class MoveInADirectionFeature
-
+    [NUnit.Framework.DescriptionAttribute("North")]
+    public partial class NorthFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
@@ -36,9 +35,8 @@ namespace LevelUpGame.Test.Features
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "Move in a direction", "    I want to move my character.  If they attempt to move past a boundary, the mo" +
-                    "ve results in no change in position.", ProgrammingLanguage.CSharp, featureTags);
-
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "North", "    I want to move my character North. If they attampt to \n    move past a bounda" +
+                    "ry, the move results in no change in position.", ProgrammingLanguage.CSharp, featureTags);
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -82,7 +80,6 @@ namespace LevelUpGame.Test.Features
         [NUnit.Framework.TestCaseAttribute("1", "10", "North", "1", "10", null)]
         [NUnit.Framework.TestCaseAttribute("1", "1", "North", "1", "2", null)]
         public void MoveInADirection(string startingPositionX, string startingPositionY, string direction, string endingPositionX, string endingPositionY, string[] exampleTags)
-
         {
             string[] @__tags = new string[] {
                     "acceptance"};
@@ -95,12 +92,10 @@ namespace LevelUpGame.Test.Features
             argumentsOfScenario.Add("startingPositionX", startingPositionX);
             argumentsOfScenario.Add("startingPositionY", startingPositionY);
             argumentsOfScenario.Add("direction", direction);
-
             argumentsOfScenario.Add("endingPositionX", endingPositionX);
             argumentsOfScenario.Add("endingPositionY", endingPositionY);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Move in a direction", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 5
-
+#line 8
     this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -110,25 +105,23 @@ namespace LevelUpGame.Test.Features
             else
             {
                 this.ScenarioStart();
-
-#line 7
+#line 10
     testRunner.Given(string.Format("the character starts at position with XCoordinates {0}", startingPositionX), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 8
+#line 11
     testRunner.And(string.Format("starts at YCoordinates {0}", startingPositionY), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 9
+#line 12
     testRunner.And(string.Format("the player choses to move in {0}", direction), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 10
+#line 13
     testRunner.When("the character moves", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 11
+#line 14
     testRunner.Then(string.Format("the character is now at position with XCoordinates {0}", endingPositionX), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-#line 12
+#line 15
     testRunner.And(string.Format("YCoordinates{0}", endingPositionY), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-
 #line hidden
             }
             this.ScenarioCleanup();

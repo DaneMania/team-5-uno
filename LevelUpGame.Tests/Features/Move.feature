@@ -1,5 +1,8 @@
-Feature: Move in a direction
-    I want to move my character.  If they attempt to move past a boundary, the move results in no change in position.
+
+Feature: North
+
+    I want to move my character North. If they attampt to 
+    move past a boundary, the move results in no change in position.
 
     @acceptance
     Scenario Outline: Move in a direction
@@ -15,4 +18,3 @@ Feature: Move in a direction
     | 1 | 10 | North | 1 | 10 |
     | 1 | 1 | North | 1 | 2 |
     
-
