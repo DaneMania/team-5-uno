@@ -22,6 +22,7 @@ namespace LevelUpGame.Test.Features
     [NUnit.Framework.TestFixtureAttribute()]
     [NUnit.Framework.DescriptionAttribute("Move in a direction")]
     public partial class MoveInADirectionFeature
+
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
@@ -37,6 +38,7 @@ namespace LevelUpGame.Test.Features
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
             TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "Move in a direction", "    I want to move my character.  If they attempt to move past a boundary, the mo" +
                     "ve results in no change in position.", ProgrammingLanguage.CSharp, featureTags);
+
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -80,6 +82,7 @@ namespace LevelUpGame.Test.Features
         [NUnit.Framework.TestCaseAttribute("1", "10", "North", "1", "10", null)]
         [NUnit.Framework.TestCaseAttribute("1", "1", "North", "1", "2", null)]
         public void MoveInADirection(string startingPositionX, string startingPositionY, string direction, string endingPositionX, string endingPositionY, string[] exampleTags)
+
         {
             string[] @__tags = new string[] {
                     "acceptance"};
@@ -92,10 +95,12 @@ namespace LevelUpGame.Test.Features
             argumentsOfScenario.Add("startingPositionX", startingPositionX);
             argumentsOfScenario.Add("startingPositionY", startingPositionY);
             argumentsOfScenario.Add("direction", direction);
+
             argumentsOfScenario.Add("endingPositionX", endingPositionX);
             argumentsOfScenario.Add("endingPositionY", endingPositionY);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Move in a direction", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 5
+
     this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -105,6 +110,7 @@ namespace LevelUpGame.Test.Features
             else
             {
                 this.ScenarioStart();
+
 #line 7
     testRunner.Given(string.Format("the character starts at position with XCoordinates {0}", startingPositionX), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
@@ -122,6 +128,7 @@ namespace LevelUpGame.Test.Features
 #line hidden
 #line 12
     testRunner.And(string.Format("YCoordinates{0}", endingPositionY), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+
 #line hidden
             }
             this.ScenarioCleanup();
