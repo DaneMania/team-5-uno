@@ -3,8 +3,10 @@ namespace levelup.cli;
 public class Character
 {  
     private string _name;
-    private int count;
-    
+    private int count = 0;
+
+    // private StartPosition;
+
     static string DEFAULT_NAME= "Hazzah";
 
     public Character() {

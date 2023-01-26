@@ -19,7 +19,7 @@ public class CharacterTest {
         public void CharacterHasNameAndMoveCountWhenInitialized()
         {
             Assert.AreEqual(arbitraryName, testObj.Name);
-            Assert.AreEqual(0, testObj.moveCount);
+            Assert.AreEqual(0, testObj.moveCount());
         }
 }
 }
