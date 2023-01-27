@@ -11,9 +11,13 @@ public class Position {
 
     public int X {
         get { return _x;}
-        set { value = _y; }
+        set { value = _x; }
     }
 
+ public int Y {
+        get { return _y;}
+        set { value = _y; }
+    }
     public Position() {
 
     }
