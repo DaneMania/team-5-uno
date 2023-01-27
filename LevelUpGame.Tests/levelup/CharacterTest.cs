@@ -4,23 +4,23 @@ using TechTalk.SpecFlow;
 
 namespace levelup
 {
-public class CharacterTest {
-    private Character? testObj;
+    public class CharacterTest {
+        private Character? testObj;
 
-    string arbitraryName = "Arbitrary Name";
+        string arbitraryName = "Arbitrary Name";
 
-    [SetUp]
-    public void SetUp()
-    {
-        testObj = new Character(arbitraryName);
-    }
-
-    [Test]
-        public void CharacterHasNameAndMoveCountWhenInitialized()
+        [SetUp]
+        public void SetUp()
         {
-            Assert.AreEqual(arbitraryName, testObj.Name);
-            Assert.AreEqual(0, testObj.moveCount());
+            testObj = new Character(arbitraryName);
         }
-}
+
+        [Test]
+            public void CharacterHasNameAndMoveCountWhenInitialized()
+            {
+                Assert.AreEqual(arbitraryName, testObj.Name);
+                Assert.AreEqual(0, testObj.moveCount);
+            }
+    }
 }
 

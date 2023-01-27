@@ -1,14 +1,15 @@
 using levelup.cli;
 using NUnit.Framework;
 
-namespace levelup{
-    class PositionTest{
-    public PositionTest(){
-    Position position = new Position();
-    position.x =  5;
-
-    }
-
+using TechTalk.SpecFlow;
+namespace levelup {
+    class PositionTest
+    {
+        public PositionTest()
+        {
+            Position position = new Position();
+            position.X =  5;
+        }
     }
 }
 

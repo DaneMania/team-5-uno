@@ -1,6 +1,7 @@
 namespace levelup.cli;
 
-class Position{
+
+public class Position {
     private int _x = 1, _y = 1;
     public void setPosition(int x, int y){
         _x = x;
@@ -22,3 +23,4 @@ class Position{
         _y = y;
     }
 }
+
